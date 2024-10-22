@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Box Shadow for Larger Screens</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+      }
+
+      @media screen and (width>=600px) {
+        div {
+          background-color: brown;
+          box-shadow: 0px 5px 10px black;
+        }
+      }
+
+      @media screen and (width<600px) {
+        div {
+          background-color: brown;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
